@@ -11,10 +11,24 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   </head>
 
   <body class="bg-dark">
     <main>
+
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div id="offcanvasOverview">Overviews</div>
+          <div id="offcanvasGenres" class="text-muted">Genres</div>
+        </div>
+      </div>
+
       <div class="text-center container">
         <div class="row py-lg-3">
           <div class="col-lg-6 col-md-8 mx-auto">
@@ -31,10 +45,10 @@
         </div>
       </div>
 
-      <div class="album">
+      <div class="album mb-3 mt-3">
         <ul class="list-group container" id="lista">
-          <li class="list-group-item list-group-item-action">
-            <div class="container row">
+          <!-- <li class="list-group-item list-group-item-action"> -->
+            <!-- <div class="container row">
               <div class="col">
                 <div class="col">Titulo</div>
                 <div class="col">Hola desc</div>
@@ -45,9 +59,9 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
-              </div>
-            </div>
-          </li>
+              </div> -->
+            <!-- </div> -->
+          <!-- </li> -->
         </ul>
       </div>
     </main>

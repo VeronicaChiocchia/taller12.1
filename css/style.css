@@ -19,10 +19,35 @@ main {
     min-height: calc(100vh - 100px);
   }
 
-.checked{
+/* .checked{
     color: orange;
-}
+} */
 
 .offcanvas-top{
     height: fit-content;
+}
+
+.fas {
+    color: orange;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    cursor: pointer;
+}
+
+.list-item:hover {
+    background-color: rgb(36, 40, 44) !important; 
+    /* font-size: 3rem; */
+}
+
+.movie-title {
+    font-weight: 600;
+}
+
+.movie-overview {
+    font-style: italic;
+    font-size: 1rem;
 }
