@@ -11,21 +11,49 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
 
   <body class="bg-dark">
     <main>
-
-      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div
+        class="offcanvas offcanvas-top"
+        tabindex="-1"
+        id="offcanvasTop"
+        aria-labelledby="offcanvasTopLabel"
+      >
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
         </div>
         <div class="offcanvas-body">
-          <div id="offcanvasOverview">Overviews</div>
-          <div id="offcanvasGenres" class="text-muted">Genres</div>
+          <div id="offcanvasOverview" class="mb-3"></div>
+          <hr />
+          <div class="container-fluid m-0">
+            <div class="row">
+              <div id="offcanvasGenres" class="text-muted col-md-11 px-0"></div>
+              <div class="btn-group col-auto" id="dropdown-button">
+                <button
+                  class="btn btn-secondary btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" id="more-info">
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -46,23 +74,7 @@
       </div>
 
       <div class="album mb-3 mt-3">
-        <ul class="list-group container" id="lista">
-          <!-- <li class="list-group-item list-group-item-action"> -->
-            <!-- <div class="container row">
-              <div class="col">
-                <div class="col">Titulo</div>
-                <div class="col">Hola desc</div>
-              </div>
-              <div class="col-auto" id="star-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div> -->
-            <!-- </div> -->
-          <!-- </li> -->
-        </ul>
+        <ul class="list-group container" id="lista"></ul>
       </div>
     </main>
 
